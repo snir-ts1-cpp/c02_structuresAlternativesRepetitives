@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.23)
+project(c02_structuresAlternativesRepetitives_projClion)
+
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(sc1_structIf sc1_structIf.cpp)
+add_executable(sc2_structIfElse sc2_structIfElse.cpp)
+add_executable(sc3_structIfElse_sansAccolades sc3_structIfElse_sansAccolades.cpp)
+add_executable(sc4_structIfElseIf sc4_structIfElseIf.cpp)
+add_executable(sc5_structSwitchCase sc5_structSwitchCase.cpp)

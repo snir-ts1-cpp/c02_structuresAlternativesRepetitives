@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "c02_structuresAlternativesRepetitives_projClion",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sc1_structIf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc1_structIf-Debug-68227c40c96be40279f7.json",
+					"name" : "sc1_structIf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc2_structIfElse::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc2_structIfElse-Debug-564bab2118e5b86dedd7.json",
+					"name" : "sc2_structIfElse",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc3_structIfElse_sansAccolades::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc3_structIfElse_sansAccolades-Debug-1ebe8824c06714a18d96.json",
+					"name" : "sc3_structIfElse_sansAccolades",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc4_structIfElseIf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc4_structIfElseIf-Debug-6c62d81be4992306a4e8.json",
+					"name" : "sc4_structIfElseIf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc5_structSwitchCase::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc5_structSwitchCase-Debug-66d7cedfea4a60d1d1ca.json",
+					"name" : "sc5_structSwitchCase",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug",
+		"source" : "/Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,263 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: c02_structuresAlternativesRepetitives_projClion
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target sc1_structIf
+
+
+#############################################
+# Order-only phony target for sc1_structIf
+
+build cmake_object_order_depends_target_sc1_structIf: phony || CMakeFiles/sc1_structIf.dir
+
+build CMakeFiles/sc1_structIf.dir/sc1_structIf.cpp.o: CXX_COMPILER__sc1_structIf_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc1_structIf.cpp || cmake_object_order_depends_target_sc1_structIf
+  DEP_FILE = CMakeFiles/sc1_structIf.dir/sc1_structIf.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc1_structIf.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc1_structIf.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc1_structIf
+
+
+#############################################
+# Link the executable sc1_structIf
+
+build sc1_structIf: CXX_EXECUTABLE_LINKER__sc1_structIf_Debug CMakeFiles/sc1_structIf.dir/sc1_structIf.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc1_structIf.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc1_structIf
+  TARGET_PDB = sc1_structIf.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc2_structIfElse
+
+
+#############################################
+# Order-only phony target for sc2_structIfElse
+
+build cmake_object_order_depends_target_sc2_structIfElse: phony || CMakeFiles/sc2_structIfElse.dir
+
+build CMakeFiles/sc2_structIfElse.dir/sc2_structIfElse.cpp.o: CXX_COMPILER__sc2_structIfElse_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc2_structIfElse.cpp || cmake_object_order_depends_target_sc2_structIfElse
+  DEP_FILE = CMakeFiles/sc2_structIfElse.dir/sc2_structIfElse.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc2_structIfElse.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc2_structIfElse.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc2_structIfElse
+
+
+#############################################
+# Link the executable sc2_structIfElse
+
+build sc2_structIfElse: CXX_EXECUTABLE_LINKER__sc2_structIfElse_Debug CMakeFiles/sc2_structIfElse.dir/sc2_structIfElse.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc2_structIfElse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc2_structIfElse
+  TARGET_PDB = sc2_structIfElse.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc3_structIfElse_sansAccolades
+
+
+#############################################
+# Order-only phony target for sc3_structIfElse_sansAccolades
+
+build cmake_object_order_depends_target_sc3_structIfElse_sansAccolades: phony || CMakeFiles/sc3_structIfElse_sansAccolades.dir
+
+build CMakeFiles/sc3_structIfElse_sansAccolades.dir/sc3_structIfElse_sansAccolades.cpp.o: CXX_COMPILER__sc3_structIfElse_sansAccolades_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc3_structIfElse_sansAccolades.cpp || cmake_object_order_depends_target_sc3_structIfElse_sansAccolades
+  DEP_FILE = CMakeFiles/sc3_structIfElse_sansAccolades.dir/sc3_structIfElse_sansAccolades.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc3_structIfElse_sansAccolades.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc3_structIfElse_sansAccolades.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc3_structIfElse_sansAccolades
+
+
+#############################################
+# Link the executable sc3_structIfElse_sansAccolades
+
+build sc3_structIfElse_sansAccolades: CXX_EXECUTABLE_LINKER__sc3_structIfElse_sansAccolades_Debug CMakeFiles/sc3_structIfElse_sansAccolades.dir/sc3_structIfElse_sansAccolades.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc3_structIfElse_sansAccolades.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc3_structIfElse_sansAccolades
+  TARGET_PDB = sc3_structIfElse_sansAccolades.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc4_structIfElseIf
+
+
+#############################################
+# Order-only phony target for sc4_structIfElseIf
+
+build cmake_object_order_depends_target_sc4_structIfElseIf: phony || CMakeFiles/sc4_structIfElseIf.dir
+
+build CMakeFiles/sc4_structIfElseIf.dir/sc4_structIfElseIf.cpp.o: CXX_COMPILER__sc4_structIfElseIf_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc4_structIfElseIf.cpp || cmake_object_order_depends_target_sc4_structIfElseIf
+  DEP_FILE = CMakeFiles/sc4_structIfElseIf.dir/sc4_structIfElseIf.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc4_structIfElseIf.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc4_structIfElseIf.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc4_structIfElseIf
+
+
+#############################################
+# Link the executable sc4_structIfElseIf
+
+build sc4_structIfElseIf: CXX_EXECUTABLE_LINKER__sc4_structIfElseIf_Debug CMakeFiles/sc4_structIfElseIf.dir/sc4_structIfElseIf.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc4_structIfElseIf.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc4_structIfElseIf
+  TARGET_PDB = sc4_structIfElseIf.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc5_structSwitchCase
+
+
+#############################################
+# Order-only phony target for sc5_structSwitchCase
+
+build cmake_object_order_depends_target_sc5_structSwitchCase: phony || CMakeFiles/sc5_structSwitchCase.dir
+
+build CMakeFiles/sc5_structSwitchCase.dir/sc5_structSwitchCase.cpp.o: CXX_COMPILER__sc5_structSwitchCase_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc5_structSwitchCase.cpp || cmake_object_order_depends_target_sc5_structSwitchCase
+  DEP_FILE = CMakeFiles/sc5_structSwitchCase.dir/sc5_structSwitchCase.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc5_structSwitchCase.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc5_structSwitchCase.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc5_structSwitchCase
+
+
+#############################################
+# Link the executable sc5_structSwitchCase
+
+build sc5_structSwitchCase: CXX_EXECUTABLE_LINKER__sc5_structSwitchCase_Debug CMakeFiles/sc5_structSwitchCase.dir/sc5_structSwitchCase.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc5_structSwitchCase.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc5_structSwitchCase
+  TARGET_PDB = sc5_structSwitchCase.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion -B/Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug
+
+build all: phony sc1_structIf sc2_structIfElse sc3_structIfElse_sansAccolades sc4_structIfElseIf sc5_structSwitchCase
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

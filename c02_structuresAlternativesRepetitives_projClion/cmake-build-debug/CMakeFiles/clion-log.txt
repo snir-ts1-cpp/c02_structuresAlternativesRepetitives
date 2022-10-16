@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion -B /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug

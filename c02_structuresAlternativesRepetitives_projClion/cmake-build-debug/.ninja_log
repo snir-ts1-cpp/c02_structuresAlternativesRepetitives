@@ -1,0 +1,17 @@
+# ninja log v5
+0	342	1665911944992401344	CMakeFiles/sc1_structIf.dir/sc1_structIf.cpp.o	bb2fda6b34beff03
+343	375	1665911945027055992	sc1_structIf	d5e86725904f888
+0	301	1665911974926729411	CMakeFiles/sc5_structSwitchCase.dir/sc5_structSwitchCase.cpp.o	87f00c7cb280e4cd
+301	332	1665911974960046688	sc5_structSwitchCase	60f08cb1a52fcc1c
+1	299	1665912307859479932	CMakeFiles/sc5_structSwitchCase.dir/sc5_structSwitchCase.cpp.o	87f00c7cb280e4cd
+299	333	1665912307895329747	sc5_structSwitchCase	60f08cb1a52fcc1c
+0	297	1665912347559260982	CMakeFiles/sc4_structIfElseIf.dir/sc4_structIfElseIf.cpp.o	b8e774b41eedd25a
+298	331	1665912347593977295	sc4_structIfElseIf	c09588da1b231340
+0	292	1665912375320481380	CMakeFiles/sc3_structIfElse_sansAccolades.dir/sc3_structIfElse_sansAccolades.cpp.o	600ef9bed27dc87b
+292	324	1665912375354318472	sc3_structIfElse_sansAccolades	46f521a7148bddd3
+0	337	1665912393826953318	CMakeFiles/sc2_structIfElse.dir/sc2_structIfElse.cpp.o	2f94f79f5d9e6b80
+337	372	1665912393862711136	sc2_structIfElse	df5df55c58323936
+1	323	1665912409217288810	CMakeFiles/sc2_structIfElse.dir/sc2_structIfElse.cpp.o	2f94f79f5d9e6b80
+323	356	1665912409252496939	sc2_structIfElse	df5df55c58323936
+1	297	1665912433883509914	CMakeFiles/sc1_structIf.dir/sc1_structIf.cpp.o	bb2fda6b34beff03
+297	329	1665912433916756985	sc1_structIf	d5e86725904f888

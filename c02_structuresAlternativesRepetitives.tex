@@ -13,6 +13,8 @@
 \version{v1.0}
 \dateversion{02.10.22}
 \type{cours}
+\repogithub{c02\_structuresAlternativesRepetitives}
+\urlgithub{https://github.com/snir-ts1-cpp/c02\_structuresAlternativesRepetitives}
 
 %----------------------------------------------------
 % Définition des pieds et têtes de page
@@ -35,6 +37,7 @@
 % Début du document
 %----------------------------------------------------
 \begin{document}
+\renewcommand{\contentsname}{Sommaire} % Changement du nom de la table des matières
 \cartouche
 \thispagestyle{firstpage}
 
@@ -49,6 +52,8 @@
 }
 
 \licence
+
+\github
 
 \tableofcontents
 \clearpage
@@ -65,12 +70,11 @@ suivant la condition donnée.
 % Structure if
 %--------------------
 \subsection{Structure Si : \mintinline{cpp}`if`}
+La structure \mintinline{cpp}`if`  est faite pour exécuter une série d'instructions seulement quand une condition fixée est vraie.
 
 \subsubsection{Définition d'une structure \mintinline{cpp}`if`}
 
 \smallskip
-Nous donnons ci-dessous la structure d'un \mintinline{cpp}`if`:
-
 \begin{wrapfigure}[10]{l}{\textwidth/2}
     \centering
     \includegraphics[max height=4cm,max width = \textwidth/2]{assets/if.jpg}
@@ -88,69 +92,55 @@ Si la condition est \mintinline{cpp}`false` :
     \item L'exécution continue sur la suite du code après le \mintinline{cpp}`if` 
 \end{itemize}
 
-\smallskip
 \subsubsection{Exemple 1 : Utilisation d'une structure \mintinline{cpp}`if`}
-\begin{cppcode}
-    #include <iostream>
-    using namespace std;
 
-    int main() {
-        int nb;
-        cout << "Entrez un entier : ";
-        cin >> nb;
-
-        if (nb > 0) {
-            cout << "Vous avez entré un entier positif: " << number << endl;
-        }
-
-        cout << "Cette ligne est toujours exécutée.";
-
-        return 0;
-    }
-
-\end{cppcode}
-\captionof{listing}{Exemple 1 : Utilisation d'une structure \mintinline{cpp}`if`}
+\cppfile{c02_structuresAlternativesRepetitives_projClion/sc1_structIf.cpp}
+\captionof{listing}{Utilisation d'une structure \mintinline{cpp}`if`}
 
 \bigskip
 Sortie console pour une saisie utilisateur d'un entier positif : \mintinline{cpp}`42`  :
 
 \begin{textcode}
     Entrez un entier : 42
-    Vous avez entré un entier positif : 42
-    Cette ligne est toujours exécutée.
+    Vous avez entre un entier positif : 42
+    Cette ligne est toujours executee.
 \end{textcode}
 
 Sortie console pour une saisie utilisateur d'un entier négatif : \mintinline{cpp}`-81`  :
 
 \begin{textcode}
     Entrez un entier : -81
-    Cette ligne est toujours exécutée.
+    Cette ligne est toujours executee.
 \end{textcode}
 
-Explications :
-
+\etapesExec{
 \begin{enumerate}
-    \item Dans un premier temps nous déclarons \mintinline{cpp}`nb`, variable qui va recevoir le nombre entier saisi par l'utilisateur.
-    \item Nous mettons ensuite une structure \mintinline{cpp}`if` dans laquelle la condition est sur l'entier \mintinline{cpp}`nb` : \mintinline{cpp}`nb > 0` 
-    \item Si \mintinline{cpp}`nb` est strictement positif l'exécution sera aiguillée vers :\\
-     \mintinline{cpp}`cout << "Vous avez entré un entier positif : " << number << endl;`
-    \item Si \mintinline{cpp}`nb` est négatif ou égal à 0 l'exécution sera aiguillée hors de la structure \mintinline{cpp}`if` vers l'instruction suivante :\\
-    \mintinline{cpp}`cout << "Cette ligne est toujours exécutée.";` 
+    \item Dans un premier temps, nous déclarons \mintinline{cpp}`nb`, variable qui va recevoir le nombre entier saisi par l'utilisateur \faArrowRight\ \textbf{l.7}.
+    \item Nous nous occupons ensuite de l'affichage de la demande ainsi que de la lecture et du stockage de la saisie utilisateur dans la variable déclarée. \faArrowRight\ \textbf{l.8 et l.9}
+    \item Puis, Nous mettons en œuvre une structure \mintinline{cpp}`if` dans laquelle la condition est sur l'entier \mintinline{cpp}`nb` : \mintinline{cpp}`nb > 0` \faArrowRight\ \textbf{l.11} 
+    \begin{itemize}
+        \item Si \mintinline{cpp}`nb` est strictement positif l'exécution sera aiguillée vers \faArrowRight\ \textbf{l.12} :\\
+        \mintinline{cpp}`cout << "Vous avez entre un entier positif : " << number << endl;`\\
+        Puis le flux d'exécution sortira de la structure \mintinline{cpp}`if` pour aller sur l'instruction suivante \faArrowRight\ \textbf{l.15} :\\
+        \mintinline{cpp}`cout << "Cette ligne est toujours executee.";` 
+        \item Si \mintinline{cpp}`nb` est négatif ou égal à 0 l'exécution sera aiguillée hors de la structure \mintinline{cpp}`if` vers l'instruction suivante \faArrowRight\ \textbf{l.15}  :\\
+        \mintinline{cpp}`cout << "Cette ligne est toujours executee.";` 
+    \end{itemize}
 \end{enumerate}
+}
 
 %--------------------
 % Structure if...else
 %--------------------
-\subsection{Structure Si Sinon : \mintinline{cpp}`if ... else`}
+\subsection{Structure Si Sinon : \mintinline{cpp}`if...else`}
+La structure \mintinline{cpp}`if...else` est utilisée pour aiguiller le programme sur un bloc d'instructions dans le cas ou une condition fixée est juste et sur un autre bloc dans le cas ou la condition est fausse.
 
-\subsubsection{Définition d'une structure \mintinline{cpp}`if`}
+\subsubsection{Définition d'une structure \mintinline{cpp}`if...else`}
 
 \smallskip
-Nous donnons ci-dessous la structure d'un \mintinline{cpp}`if`:
-
 \begin{multicols}{2}
 \begin{figure}[H]
-    \includegraphics[max height=10cm,max width = \textwidth/2]{assets/ifElse.jpg}
+    \includegraphics[max height=7cm,max width = \textwidth/2]{assets/ifElse.jpg}
     \centering
     \caption{Structure d'un \mintinline{cpp}`if...else`}
 \end{figure}
@@ -168,77 +158,223 @@ Si la condition est \mintinline{cpp}`false` :
 \end{multicols}
 
 \subsubsection{Exemple 2 : Utilisation d'une structure \mintinline{cpp}`if...else`}
-\begin{cppcode}
-    #include <iostream>
-    using namespace std;
-
-    int main() {
-        int nb;
-        cout << "Entrez un entier : ";
-        cin >> nb;
-
-        if (nb >= 0) {
-            cout << "Vous avez entré un entier positif: " << number << endl;
-        }
-        else {
-            cout << "Vous avez entré un entier négatif: " << number << endl;
-        }
-
-        cout << "Cette ligne est toujours exécutée.";
-
-        return 0;
-    }
-
-\end{cppcode}
-\captionof{listing}{Exemple 2 : Utilisation d'une structure \mintinline{cpp}`if...else`}
+\cppfile{c02_structuresAlternativesRepetitives_projClion/sc2_structIfElse.cpp}
+\captionof{listing}{Utilisation d'une structure \mintinline{cpp}`if...else`}
+\label{exempleStrucIfElse}
 
 \bigskip
 Sortie console pour une saisie utilisateur d'un entier positif : \mintinline{cpp}`42`  :
 
 \begin{textcode}
     Entrez un entier : 42
-    Vous avez entré un entier positif : 42
-    Cette ligne est toujours exécutée.
+    Vous avez entre un entier positif : 42
+    Cette ligne est toujours executee.
 \end{textcode}
 
 Sortie console pour une saisie utilisateur d'un entier négatif : \mintinline{cpp}`-81`  :
 
 \begin{textcode}
     Entrez un entier : -81
-    Vous avez entré un entier négatif : -81
-    Cette ligne est toujours exécutée.
+    Vous avez entre un entier negatif : -81
+    Cette ligne est toujours executee.
 \end{textcode}
 
-Explications :
-
+\etapesExec{
 \begin{enumerate}
-    \item Dans un premier temps nous déclarons \mintinline{cpp}`nb`, variable qui va recevoir le nombre entier saisi par l'utilisateur.
-    \item Nous mettons ensuite une structure \mintinline{cpp}`if` dans laquelle la condition est sur l'entier \mintinline{cpp}`nb` : \mintinline{cpp}`nb >= 0` 
-    \item Si \mintinline{cpp}`nb` est positif ou égal à 0 l'exécution sera aiguillée vers :\\
-     \mintinline{cpp}`cout << "Vous avez entré un entier positif : " << number << endl;`
-    \item Sinon l'exécution sera aiguillée vers : \\
-    \mintinline{cpp}`cout << "Vous avez entré un entier négatif: " << number << endl;` 
-    \item Une fois sorti de la structure \mintinline{cpp}`if` l'exécution du code continue et va sur l'instruction :\\
-     \mintinline{cpp}`cout << "Cette ligne est toujours exécutée.";` 
+    \item Dans un premier temps, nous déclarons \mintinline{cpp}`nb`, variable qui va recevoir le nombre entier saisi par l'utilisateur \faArrowRight\ \textbf{l.7}.
+    \item Nous nous occupons ensuite de l'affichage de la demande ainsi que de la lecture et du stockage de la saisie utilisateur dans la variable déclarée. \faArrowRight\ \textbf{l.8 et l.9}
+    \item Puis, nous mettons en œuvre une structure \mintinline{cpp}`if...else` dans laquelle la condition est sur l'entier \mintinline{cpp}`nb` : \mintinline{cpp}`nb >= 0` \faArrowRight\ \textbf{l.11}. 
+    \begin{itemize}
+        \item Si \mintinline{cpp}`nb` est positif ou égal à 0 l'exécution sera aiguillée vers les instructions dans le \mintinline{cpp}`if` \faArrowRight\ \textbf{l.12} :\\
+         \mintinline{cpp}`cout << "Vous avez entre un entier positif : " << number << endl;`
+        \item Sinon l'exécution sera aiguillée vers les instructions dans le \mintinline{cpp}`else` \faArrowRight\ \textbf{l.15} : \\
+        \mintinline{cpp}`cout << "Vous avez entre un entier negatif: " << number << endl;` 
+    \end{itemize}
+    \item Une fois sorti de la structure \mintinline{cpp}`if` l'exécution du code continue et va sur l'instruction \faArrowRight\ \textbf{l.18} :\\
+     \mintinline{cpp}`cout << "Cette ligne est toujours executee.";` 
 \end{enumerate}
+}
+
+\begin{noteblock}
+    \textbf{Utilisation des accolades \{ \}}
+    
+    \smallskip
+    Dans le cas d'\textbf{une seule instruction} à exécuter dans le \mintinline{cpp}`if` ou dans le \mintinline{cpp}`else`, C++ nous autorise à ne pas mettre les accolades. Nous reprenons la structure du code source \ref{exempleStrucIfElse} sans accolades pour le \mintinline{cpp}`if...else` dans le code source \ref{ifElseSansAccolades}.
+\end{noteblock}
+
+\cppfile{c02_structuresAlternativesRepetitives_projClion/sc3_structIfElse_sansAccolades.cpp}
+\captionof{listing}{Utilisation d'une structure \mintinline{cpp}`if...else` sans accolades}
+\label{ifElseSansAccolades}
 
 %----------------------
 % Structure if..else if
 %----------------------
-\subsection{Structures Si imbriquées : \mintinline{cpp}`if ... else if`}
+\subsection{Structures Si imbriquées : \mintinline{cpp}`if...else if`}
+La structure \mintinline{cpp}`if...else if` permet d'imbriquer les conditions suivies des blocs d'exécution les uns à la suite des autres.
 
+\subsubsection{Définition d'une structure \mintinline{cpp}`if...else if`}
+
+\smallskip
+%Les étapes ci-dessous sont basées sur le diagramme de la figure \ref{structIfElseIf}
+
+\begin{multicols}{2}
+\begin{figure}[H]
+    \includegraphics[max height=10cm,max width = \textwidth/2]{assets/ifElseIf.jpg}
+    \centering
+    \caption{Structure d'un \mintinline{cpp}`if...else if`}
+    \label{structIfElseIf}
+\end{figure}
+
+\begin{itemize}
+    \item Si \mintinline{cpp}`condition1` est \mintinline{cpp}`true`:\\  Le programme exécute les instructions 1 et 2 puis saute à la fin de la structure.
+    \item Si \mintinline{cpp}`condition1` est \mintinline{cpp}`false`:\\ Le programme teste la deuxième condition \mintinline{cpp}`condition2` :
+    \begin{itemize}
+        \item Si \mintinline{cpp}`condition2` est \mintinline{cpp}`true`, le programme exécute les instructions 3 et 4 et saute à la fin de la structure.
+        \item Si \mintinline{cpp}`condition2` est \mintinline{cpp}`false`, le programme exécute les instructions 4 et 5 du \mintinline{cpp}`else`. 
+    \end{itemize}
+\end{itemize}
+\end{multicols}
+
+\begin{noteblock}
+    Nous ne sommes pas limité à un seul \mintinline{cpp}`else if` il est possible d'en ajouter autant que nécessaire entre le \mintinline{cpp}`if` et le \mintinline{cpp}`else`.
+\end{noteblock}
+
+\subsubsection{Exemple 3 : Utilisation d'une structure \mintinline{cpp}`if...else if`}
+
+\cppfile{c02_structuresAlternativesRepetitives_projClion/sc4_structIfElseIf.cpp}
+\captionof{listing}{Utilisation d'une structure \mintinline{cpp}`if...else if`}
+\label{exempleStrucIfElseIf}
+
+\bigskip
+Sortie console pour une saisie utilisateur d'un entier positif : \mintinline{cpp}`42`  :
+
+\begin{textcode}
+    Entrez un entier : 42
+    Vous avez entre un entier positif : 42
+    Cette ligne est toujours executee.
+\end{textcode}
+
+Sortie console pour une saisie utilisateur d'un entier négatif : \mintinline{cpp}`-81`  :
+
+\begin{textcode}
+    Entrez un entier : -81
+    Vous avez entre un entier negatif : -81
+    Cette ligne est toujours executee.
+\end{textcode}
+
+Sortie console pour une saisie utilisateur du nombre \mintinline{cpp}`0` :
+
+\begin{textcode}
+    Entrez un entier : 0
+    Vous avez entre 0
+    Cette ligne est toujours executee.
+\end{textcode}
+
+\etapesExec{
+\begin{enumerate}
+    \item Dans un premier temps, nous déclarons \mintinline{cpp}`nb`, variable qui va recevoir le nombre entier saisi par l'utilisateur \faArrowRight\ \textbf{l.7}.
+    \item Nous nous occupons ensuite de l'affichage de la demande ainsi que de la lecture et du stockage de la saisie utilisateur dans la variable déclarée. \faArrowRight\ \textbf{l.8 et l.9}
+    \item Puis, nous mettons en œuvre une structure \mintinline{cpp}`if...else if` \faArrowRight\ \textbf{l.11}:
+    \begin{itemize}
+        \item 1\up{ere} condition \mintinline{cpp}`nb > 0` \faArrowRight\ \textbf{l.11}:\\
+        Si \mintinline{cpp}`nb` est positif le flux sera aiguillée vers les instructions dans le \mintinline{cpp}`if` :\\
+        \mintinline{cpp}`cout << "Vous avez entre un entier positif : " << number << endl;`\\
+        Sinon le flux d'exécution sera dirigé vers la seconde condition.
+        \item 2\up{nd} condition \mintinline{cpp}`nb < 0` (\textbf{Uniquement si la 1ere est fausse}) \faArrowRight\ \textbf{l.14}:\\
+        Si \mintinline{cpp}`nb` est négatif le flux sera aiguillé vers les instructions dans le \mintinline{cpp}`else if` :\\
+        \mintinline{cpp}`cout << "Vous avez entre un entier negatif : " << nb << endl;`\\
+        Sinon le flux d'exécution sera dirigé vers le \mintinline{cpp}`else`. 
+        \item Instruction \mintinline{cpp}`else` \faArrowRight\ \textbf{l.17}: \\
+        Si aucune des 2 conditions n'est \mintinline{cpp}`true`, l'instruction présente dans le \mintinline{cpp}`else` sera exécutée :\\
+        \mintinline{cpp}`cout << "Vous avez entre 0"<< endl;` 
+    \end{itemize}
+    \item Une fois sorti de la structure \mintinline{cpp}`if` l'exécution du code continue et va sur l'instruction \faArrowRight\ \textbf{l.21}:\\
+     \mintinline{cpp}`cout << "Cette ligne est toujours executee.";` 
+\end{enumerate}
+}
 
 %------------------------
 % Structure switch...case
 %------------------------
-\subsection{Structure Choix : \mintinline{cpp}`switch ... case`}
+\subsection{Structure Choix : \mintinline{cpp}`switch...case`}
+La structure \mintinline{cpp}`switch...case` aiguille le flux d'exécution vers un bloc d'instruction suivant la valeur d'une variable donnée. Très utilisé dans l'implémentation de menus utilisateur, le \mintinline{cpp}`switch...case` permet de se passer de l'utilisation de plusieurs structures \mintinline{cpp}`if...else` imbriquées.
 
+\subsubsection{Définition d'une structure \mintinline{cpp}`switch...case`}
 
+\smallskip
+\begin{multicols}{2}
+\begin{figure}[H]
+    \includegraphics[max height=15cm,max width = \textwidth/2]{assets/switchCase.jpg}
+    \centering
+    \caption{Structure d'un \mintinline{cpp}`switch...case`}
+\end{figure}
 
+La variable autour duquel le choix va être fait s'apelle \mintinline{cpp}`var` :
+\begin{itemize}
+    \item Si \mintinline{cpp}`var` est égal à \mintinline{cpp}`1` alors le flux d'exécution sera dirigé vers le \mintinline{cpp}`case 1` et exécutera l'instruction 1 et 2.
+    \item Si \mintinline{cpp}`var` est égal à \mintinline{cpp}`2` alors le flux d'exécution sera dirigé vers le \mintinline{cpp}`case 2` et exécutera l'instruction 3 et 4.
+    \item Si \mintinline{cpp}`var` n'est ni égal à \mintinline{cpp}`1` ou a  \mintinline{cpp}`2` alors le flux d'exécution sera dirigé vers le \mintinline{cpp}`default` et exécutera l'instruction 5 et 6.
+\end{itemize}
+\end{multicols}
+
+\subsubsection{Exemple 4 : Utilisation d'une structure \mintinline{cpp}`switch...case`}
+
+\cppfile{c02_structuresAlternativesRepetitives_projClion/sc5_structSwitchCase.cpp}
+\captionof{listing}{Utilisation d'une structure \mintinline{cpp}`switch...case`}
+
+\bigskip
+Sortie console pour une saisie utilisateur de \mintinline{text}`1` :
+
+\begin{textcode}
+    Entrez votre choix parmi 1, 2 ou 3 : 1
+    Vous avez saisi 1
+\end{textcode}
+
+Sortie console pour une saisie utilisateur de \mintinline{text}`2` :
+
+\begin{textcode}
+    Entrez votre choix parmi 1, 2 ou 3 : 2
+    Vous avez saisi 2
+\end{textcode}
+
+Sortie console pour une saisie utilisateur de \mintinline{text}`3` :
+
+\begin{textcode}
+    Entrez votre choix parmi 1, 2 ou 3 : 3
+    Vous avez saisi 3
+\end{textcode}
+
+Sortie console pour une saisie utilisateur de \mintinline{text}`42` :
+
+\begin{textcode}
+    Entrez votre choix parmi 1, 2 ou 3 : 42
+    Vous n'avez saisi ni 1, ni 2, ni 3
+\end{textcode}
+
+\etapesExec{
+\begin{enumerate}
+    \item Dans un premier temps nous déclarons la variable qui stockera le choix de l'utilisateur : \mintinline{cpp}`choixUtilisateur` \faArrowRight\ \textbf{l.7}
+    \item Nous nous occupons ensuite de l'affichage de la demande et de lire et stocker la saisie utilisateur dans la variable déclarée. \faArrowRight\ \textbf{l.8 et l.9} 
+    \item Puis, nous mettons en œuvre une structure \mintinline{cpp}`switch...case` avec pour variable de choix \mintinline{cpp}`choixUtilisateur` \faArrowRight\ \textbf{l.11}
+    \item Suivant le contenu de la variable \mintinline{cpp}`choixUtilisateur`, le flux d'exécution sera aiguillé vers :
+    \begin{itemize}
+        \item \mintinline{cpp}`case 1` si le choix utilisateur est \mintinline{cpp}`1`, l'instruction \mintinline{cpp}`cout << "Vous avez saisi 1" << endl;` sera alors exécutée. \faArrowRight\ \textbf{l.14} 
+        \item \mintinline{cpp}`case 2` si le choix utilisateur est \mintinline{cpp}`2`, l'instruction \mintinline{cpp}`cout << "Vous avez saisi 2" << endl;` sera alors exécutée. \faArrowRight\ \textbf{l.17} 
+        \item \mintinline{cpp}`case 3` si le choix utilisateur est \mintinline{cpp}`3`, l'instruction \mintinline{cpp}`cout << "Vous avez saisi 3" << endl;` sera alors exécutée. \faArrowRight\ \textbf{l.20} 
+        \item \mintinline{cpp}`default` si le choix utilisateur n'est ni \mintinline{cpp}`1`, ni \mintinline{cpp}`2`, ni \mintinline{cpp}`3`, l'instruction \mintinline{cpp}`cout << "Vous n'avez saisi ni 1, ni 2, ni 3" << endl;` sera alors exécutée. \faArrowRight\ \textbf{l.23} 
+    \end{itemize}
+    \item Le programme sort ensuite de la structure \mintinline{cpp}`switch...case` pour se terminer.
+\end{enumerate}
+}
+
+\clearpage
 %----------------------------------------------------
 % Section 2
 %----------------------------------------------------
 \section{Les structures répétitives}
+
+Les structures répétitives permettent
+
 \subsection{Boucle Tant que : \mintinline{cpp}`while()`}
 \subsection{Boucle Faire Tant que : \mintinline{cpp}`do ... while()`}
 \subsection{Boucle Pour : \mintinline{cpp}`for()`}
