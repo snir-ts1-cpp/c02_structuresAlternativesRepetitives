@@ -19,7 +19,11 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -38,7 +42,11 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -77,6 +85,34 @@
 					"id" : "sc5_structSwitchCase::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-sc5_structSwitchCase-Debug-66d7cedfea4a60d1d1ca.json",
 					"name" : "sc5_structSwitchCase",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc6_structWhile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc6_structWhile-Debug-4f19e24f3650cd103bf2.json",
+					"name" : "sc6_structWhile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc7_structWhileInfinie::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc7_structWhileInfinie-Debug-a25ceb25d043430d12f4.json",
+					"name" : "sc7_structWhileInfinie",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc8_structDoWhile::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc8_structDoWhile-Debug-f12898ceeaf93b030b35.json",
+					"name" : "sc8_structDoWhile",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sc9_structFor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sc9_structFor-Debug-b0798a0f8d6b273dbc75.json",
+					"name" : "sc9_structFor",
 					"projectIndex" : 0
 				}
 			]

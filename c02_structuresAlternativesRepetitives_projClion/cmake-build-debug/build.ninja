@@ -192,6 +192,130 @@ build sc5_structSwitchCase: CXX_EXECUTABLE_LINKER__sc5_structSwitchCase_Debug CM
   TARGET_FILE = sc5_structSwitchCase
   TARGET_PDB = sc5_structSwitchCase.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sc6_structWhile
+
+
+#############################################
+# Order-only phony target for sc6_structWhile
+
+build cmake_object_order_depends_target_sc6_structWhile: phony || CMakeFiles/sc6_structWhile.dir
+
+build CMakeFiles/sc6_structWhile.dir/sc6_structWhile.cpp.o: CXX_COMPILER__sc6_structWhile_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc6_structWhile.cpp || cmake_object_order_depends_target_sc6_structWhile
+  DEP_FILE = CMakeFiles/sc6_structWhile.dir/sc6_structWhile.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc6_structWhile.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc6_structWhile.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc6_structWhile
+
+
+#############################################
+# Link the executable sc6_structWhile
+
+build sc6_structWhile: CXX_EXECUTABLE_LINKER__sc6_structWhile_Debug CMakeFiles/sc6_structWhile.dir/sc6_structWhile.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc6_structWhile.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc6_structWhile
+  TARGET_PDB = sc6_structWhile.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc7_structWhileInfinie
+
+
+#############################################
+# Order-only phony target for sc7_structWhileInfinie
+
+build cmake_object_order_depends_target_sc7_structWhileInfinie: phony || CMakeFiles/sc7_structWhileInfinie.dir
+
+build CMakeFiles/sc7_structWhileInfinie.dir/sc7_structWhileInfinie.cpp.o: CXX_COMPILER__sc7_structWhileInfinie_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc7_structWhileInfinie.cpp || cmake_object_order_depends_target_sc7_structWhileInfinie
+  DEP_FILE = CMakeFiles/sc7_structWhileInfinie.dir/sc7_structWhileInfinie.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc7_structWhileInfinie.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc7_structWhileInfinie.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc7_structWhileInfinie
+
+
+#############################################
+# Link the executable sc7_structWhileInfinie
+
+build sc7_structWhileInfinie: CXX_EXECUTABLE_LINKER__sc7_structWhileInfinie_Debug CMakeFiles/sc7_structWhileInfinie.dir/sc7_structWhileInfinie.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc7_structWhileInfinie.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc7_structWhileInfinie
+  TARGET_PDB = sc7_structWhileInfinie.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc8_structDoWhile
+
+
+#############################################
+# Order-only phony target for sc8_structDoWhile
+
+build cmake_object_order_depends_target_sc8_structDoWhile: phony || CMakeFiles/sc8_structDoWhile.dir
+
+build CMakeFiles/sc8_structDoWhile.dir/sc8_structDoWhile.cpp.o: CXX_COMPILER__sc8_structDoWhile_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc8_structDoWhile.cpp || cmake_object_order_depends_target_sc8_structDoWhile
+  DEP_FILE = CMakeFiles/sc8_structDoWhile.dir/sc8_structDoWhile.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc8_structDoWhile.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc8_structDoWhile.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc8_structDoWhile
+
+
+#############################################
+# Link the executable sc8_structDoWhile
+
+build sc8_structDoWhile: CXX_EXECUTABLE_LINKER__sc8_structDoWhile_Debug CMakeFiles/sc8_structDoWhile.dir/sc8_structDoWhile.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc8_structDoWhile.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc8_structDoWhile
+  TARGET_PDB = sc8_structDoWhile.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sc9_structFor
+
+
+#############################################
+# Order-only phony target for sc9_structFor
+
+build cmake_object_order_depends_target_sc9_structFor: phony || CMakeFiles/sc9_structFor.dir
+
+build CMakeFiles/sc9_structFor.dir/sc9_structFor.cpp.o: CXX_COMPILER__sc9_structFor_Debug /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/sc9_structFor.cpp || cmake_object_order_depends_target_sc9_structFor
+  DEP_FILE = CMakeFiles/sc9_structFor.dir/sc9_structFor.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++2b
+  OBJECT_DIR = CMakeFiles/sc9_structFor.dir
+  OBJECT_FILE_DIR = CMakeFiles/sc9_structFor.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sc9_structFor
+
+
+#############################################
+# Link the executable sc9_structFor
+
+build sc9_structFor: CXX_EXECUTABLE_LINKER__sc9_structFor_Debug CMakeFiles/sc9_structFor.dir/sc9_structFor.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sc9_structFor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sc9_structFor
+  TARGET_PDB = sc9_structFor.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -226,7 +350,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/joris/Documents/Enseignements/1SNIR/ts1_repositories/c02_structuresAlternativesRepetitives/c02_structuresAlternativesRepetitives_projClion/cmake-build-debug
 
-build all: phony sc1_structIf sc2_structIfElse sc3_structIfElse_sansAccolades sc4_structIfElseIf sc5_structSwitchCase
+build all: phony sc1_structIf sc2_structIfElse sc3_structIfElse_sansAccolades sc4_structIfElseIf sc5_structSwitchCase sc6_structWhile sc7_structWhileInfinie sc8_structDoWhile sc9_structFor
 
 # =============================================================================
 # Built-in targets
